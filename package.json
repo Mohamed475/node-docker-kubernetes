@@ -1,0 +1,18 @@
+{
+  "name": "node-docker-kubernetes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "docker:build": "docker build -t iammo9/node-docker-kubernetes .",
+    "docker:run": "docker run -p 8080:8080 node-docker-kubernetes",
+    "docker:push": "docker push iammo9/node-docker-kubernetes"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
